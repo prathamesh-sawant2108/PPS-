@@ -1,21 +1,29 @@
 #include<stdio.h>
 int main()
 {
-int phy,chem,bio,maths,sum;
-float,avj
-printf("marks obtain in physics:");
-scanf("%d",&phy) ;
-printf("marks obtain in chemistry:") ;
-scanf("%d",&chemistry) ;
-printf("marks obtain in bio:) ;
-scanf("%d",&bio) ;
-printf("marks obtain in maths:) ;
-scanf("%d",&maths) ;
-sum=phy+chem+bio+maths;
-printf("the total marks obtain are%d", sum) ;
-avg=sum/4;
-printf("the Average is%f", avg) ;
-per=(sum/400) *100
-printf("The total percentage obtained are%f*, per) ;
-return 0
+    int phy, chem, bio, maths, sum;
+    float avg, per;
+
+    printf("Marks obtained in Physics: ");
+    scanf("%d", &phy);
+
+    printf("Marks obtained in Chemistry: ");
+    scanf("%d", &chem);
+
+    printf("Marks obtained in Biology: ");
+    scanf("%d", &bio);
+
+    printf("Marks obtained in Maths: ");
+    scanf("%d", &maths);
+
+    sum = phy + chem + bio + maths;
+    printf("The total marks obtained are: %d\n", sum);
+
+    avg = sum / 4.0;
+    printf("The Average is: %.2f\n", avg);
+
+    per = (sum / 400.0) * 100;
+    printf("The total percentage obtained is: %.2f%%\n", per);
+
+    return 0;
 }
