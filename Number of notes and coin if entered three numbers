@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    int amount,hundred,tens,ones;
+    printf("Enter three digit amount:");
+    scanf("%d", &amount);
+    hundred=amount/100;
+    amount=amount%100;
+    tens=amount/10;
+    ones=amount%10;
+    printf("The number of notes of 100 rupees:%d \n",hundred);
+    printf("The number of notes of 10 rupees:%d \n",tens);
+    printf("The number of coin of 1 rupees:%d \n",ones);
+    
+    return 0;
+}
