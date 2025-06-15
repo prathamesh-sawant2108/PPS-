@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+    int i,Incorrect_pin,entered_pin;
+     int correct_pin=2006;
+    for(i=0;i<3;i++)
+    {
+        printf("Enter the pin:");
+        scanf("%d", &entered_pin);
+        if(correct_pin==entered_pin)
+        {
+            printf("Please Collect Your Cash\n");
+            break;
+        }
+        else
+        {
+            printf("Incorrect Pin\n");
+        }
+        
+    }
+    
+    return 0;
+}
